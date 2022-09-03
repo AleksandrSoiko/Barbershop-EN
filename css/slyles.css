@@ -24,8 +24,10 @@
     #171a24 0%,
     rgba(23, 26, 36, 0.2) 100%
   );
-  --bg-price-gradient: #111319;
-  --bg-contact-gradient: #191c26;
+  --bg-price-gradient: linear-gradient(
+    to top rgba(17, 19, 25, 1) 0% rgba(17, 19, 25, 1) 100%
+  );
+  --bg-contact-gradient: rgba(17, 19, 25, 1);
   --hero-bg-gradient: #rgba(25, 28, 38, 0.2);
   --link-color: #ffffff;
 }
@@ -87,12 +89,11 @@ body {
 /* ====== header style ====== */
 
 .header {
-  background-color: var(--second-text-color);
+  background-color: var(--bg-contact-gradient);
 }
 
 .header .container {
   display: flex;
-  padding-top: 32px;
   align-items: center;
 }
 
@@ -116,16 +117,17 @@ body {
 }
 
 .link-nav {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  display: inline-flex;
+  padding-top: 52px;
+  padding-bottom: 52px;
 
   color: var(--link-color);
   font-weight: 600;
   font-size: 12px;
 }
 
-.link-nav:hover,
-.link-nav:focus {
+.link:hover,
+.link:focus {
   color: var(--orange-accent-color);
 }
 
@@ -136,7 +138,7 @@ body {
   background-color: transparent;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: calc(16 / 12);
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--link-color);
@@ -152,4 +154,162 @@ body {
 
 /* ======== hero section style ======= */
 
+.section-hero {
+  background-color: var(--bg-contact-gradient);
+  padding: 0;
+}
 
+.social-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.social-link {
+  display: inline-flex;
+
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+}
+
+.social-list::before {
+  display: inline-block;
+  content: "";
+  background-color: var(--main-title-color);
+  width: 60px;
+  height: 1px;
+}
+
+.first-hero-text {
+  display: flex;
+  gap: 20px;
+  color: var(--uppertitle-text-color);
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.first-hero-text::before {
+  display: inline-flex;
+  content: "";
+  background-color: var(--uppertitle-text-color);
+  width: 60px;
+  height: 1px;
+}
+
+.main-title {
+  margin-bottom: 20px;
+
+  font-family: "Raleway";
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  color: var(--link-color);
+}
+
+.second-hero-text {
+  width: 360px;
+  color: var(--second-text-color);
+}
+
+.btn-slider {
+  background-color: transparent;
+  color: var(--uppertitle-text-color);
+  border: none;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+/* ======== about section style ========== */
+.section-about .container {
+  display: flex;
+  gap: 64px;
+}
+
+.about-image .list {
+  display: flex;
+  gap: 30px;
+}
+
+.first-text {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.first-text::before {
+  display: inline-flex;
+  margin-right: 20px;
+
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--main-title-color);
+}
+
+.about-title {
+  margin-bottom: 20px;
+  width: 500px;
+
+  font-family: "Raleway";
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+.second-text {
+  margin-bottom: 20px;
+
+  color: var(--main-text-color);
+}
+
+.third-text {
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.btn-about {
+  padding: 12px 20px;
+
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.btn-about:hover,
+.btn-about:focus {
+  background-color: var(--orange-accent-color);
+  cursor: pointer;
+}
+
+/* =========== prices section ======== */
+
+.section-prices {
+background-image: url(../images/price-bg.jpg);
+  background-color: var(--bg-contact-gradient);
+
+  background-size: 1680px auto;
+}
