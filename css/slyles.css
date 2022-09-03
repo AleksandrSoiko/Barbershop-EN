@@ -1,0 +1,155 @@
+/* ===== main selector ===== */
+
+:root {
+  /* font setup */
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* color setup */
+  --main-title-color: #303030;
+  --main-text-color: #555555;
+  --second-text-color: #9da4bd;
+  --price-line-color: rgba(157, 164, 189, 0.12);
+  --orange-accent-color: #ff6c00;
+  --uppertitle-text-color: rgba(157, 164, 189, 0.6);
+  --team-bg-color: #f7f7f7;
+  --form-color: rgba(157, 164, 189, 0.4);
+  --first-price-gradient: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
+  --second-price-gradient: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+  --bg-price-gradient: #111319;
+  --bg-contact-gradient: #191c26;
+  --hero-bg-gradient: #rgba(25, 28, 38, 0.2);
+  --link-color: #ffffff;
+}
+
+/* === list and link style reset === */
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*      reset      */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* main selector */
+body {
+  font-family: var(--main-font);
+  color: var(--main-title-color);
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  font-family: inherit;
+}
+/* ====== header style ====== */
+
+.header {
+  background-color: var(--second-text-color);
+}
+
+.header .container {
+  display: flex;
+  padding-top: 32px;
+  align-items: center;
+}
+
+.link-logo {
+  display: inline-flex;
+}
+
+.nav {
+  display: flex;
+  gap: 71px;
+  align-items: center;
+}
+
+.list-header {
+  display: flex;
+  gap: 30px;
+}
+
+.header-group {
+  margin-left: auto;
+}
+
+.link-nav {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  color: var(--link-color);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.link-nav:hover,
+.link-nav:focus {
+  color: var(--orange-accent-color);
+}
+
+.header-button {
+  margin-left: 45px;
+  padding: 12px 20px;
+
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--link-color);
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.header-button:hover,
+.header-button:focus {
+  background-color: var(--orange-accent-color);
+  cursor: pointer;
+}
+
+/* ======== hero section style ======= */
+
+
