@@ -307,9 +307,3 @@ body {
 
 /* =========== prices section ======== */
 
-.section-prices {
-background-image: url(../images/price-bg.jpg);
-  background-color: var(--bg-contact-gradient);
-
-  background-size: 1680px auto;
-}
