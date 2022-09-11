@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/slyles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-header>
       <div class="container">
         <nav class="nav">
           <a href="./index.html" class="link link-logo">
@@ -55,6 +55,7 @@
       <!-- hero -->
       <section class="section section-hero">
         <div class="container">
+          <div class="left-side-hero">
           <ul class="list social-list">
             <li class="social-item">
               <a href="https://instagram.com" class="link social-link"
@@ -65,6 +66,7 @@
               <a href="https://youtube.com" class="link social-link">Youtube</a>
             </li>
           </ul>
+        </div>
           <div class="right-side-hero">
             <p class="first-hero-text">A hair salon for men in Kyiv</p>
             <h1 class="main-title">BarberShop</h1>
@@ -72,7 +74,7 @@
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
-          </div>
+          
           <ul class="list slider-list">
             <li class="slider-item">
               <button class="btn-slider" type="button">Back</button>
@@ -81,6 +83,7 @@
               <button class="btn-slider" type="button">Forward</button>
             </li>
           </ul>
+        </div>
         </div>
       </section>
       <!-- about -->
@@ -388,7 +391,7 @@
       </section>
       <!-- booking and contact -->
       <div class="contact-group" id="contacts">
-        <div class="container contact-group-container">
+        <div class="contact-group-container">
           <section class="booking-section">
             <h2 class="section-title">Online-booking</h2>
           </section>
@@ -397,26 +400,26 @@
             <address class="address">
               <ul class="list list-contact">
                 <li class="item-contact">
-                  <a class="link-contact-map" href="">
+                  <a class="link-contact" href="">
                     <svg class="contact-icon" width="24" height="24">
-                      <use></use>
-                    </svg>
-                    st. Vasilkovaya, 7A Kiev, 08132</a
+                      <use href="./images/symbol-defs.svg#icon-map"></use>
+                    </svg><span class="maps-container">
+                    st. Vasilkovaya, 7A Kiev, 08132</span></a
                   >
                 </li>
                 <li class="item-contact">
-                  <a class="link-contact-tel" href="tel:+380441111111"
+                  <a class="link-contact" href="tel:+380441111111"
                     ><svg class="contact-icon" width="24" height="24">
-                      <use></use></svg
+                      <use href="./images/symbol-defs.svg#icon-phone"></use></svg
                     >+38 044 111 11 11</a
                   >
                 </li>
                 <li class="item-contact">
                   <a
-                    class="link-contact-mail"
+                    class="link-contact"
                     href="mailto:barbershop@email.com"
                     ><svg class="contact-icon" width="24" height="24">
-                      <use></use></svg
+                      <use href="./images/symbol-defs.svg#icon-mail"></use></svg
                     >barbershop@email.com</a
                   >
                 </li>
@@ -444,5 +447,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./js/header-skroll.js"></script>
   </body>
 </html>
